@@ -5,7 +5,7 @@ It supports standard 40-columns mode as well as SNAP extensions allowing to supp
 
 # Installation
 
-Extract the ZIP archive and copy `XThomsonMAP.dll` into XnView's `plugins/` folder. That's all.
+Extract the ZIP archive and copy `XThomsonMAP.usr` into XnView's `plugins/` folder. That's all.
 
 # Other XnView plugins
 https://newsgroup.xnview.com/viewtopic.php?t=11715
