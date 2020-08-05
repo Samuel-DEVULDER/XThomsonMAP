@@ -4,7 +4,8 @@
 It supports standard 40 columns mode (320x200 with 2 colors out of 16 per each 8x1 blocks) as well as TO-SNAP extensions allowing to support:
 * BM4 (320x200, 4 colors), 
 * BM16 (160x200, 16 colors) and 
-* BM80 (640x200, 2 colors) 
+* BM80 (640x200, 2 colors)
+
 modes with a modified palette.
 
 Using XnView you can now view thomson MAP file natively under windows. You can also convert any MAP file to any other format supported by XnView.
