@@ -2,15 +2,16 @@
  * XnView plugin for Thomson MAP format.
  *
  * Format: 
- *    http://ct.fournier-family.com/code/articles/prehisto_bulletin/page.php?XI=0&XJ=13
+ *    http://collection.thomson.free.fr/code/articles/prehisto_bulletin/page.php?XI=0&XJ=13
+ *    https://web.archive.org/web/20181119103222/http://collection.thomson.free.fr/code/articles/prehisto_bulletin/page.php?XI=0&XJ=13
  *
  * Compile with:
- *    gcc -s -O2 -fomit-frame-pointer -shared -Wl,--kill-at -Wall XThomsonMap.c -o XThomsonMap.usr
+ *    gcc -s -O2 -fomit-frame-pointer -shared -Wl,--kill-at -Wall XThomsonMAP.c -o XThomsonMAP.usr
  *
  * Installation:
  *    copy XThomsonMap.usr into the PlugIns directory of XnView.
  *
- * Samuel Devulder, July 2011.
+ * (c) Samuel Devulder, July 2011.
  */
 
 #include <stdio.h>
@@ -70,7 +71,7 @@ BOOL API gfpGetPluginInfo( DWORD version, LPSTR label, INT label_max_size, LPSTR
 		return FALSE; 
 
 	strncpy( label, "Thomson MAP", label_max_size ); 
-	strncpy( extension, "map,map4,map7,map16,map70,map80", extension_max_size ); 
+	strncpy( extension, "map", extension_max_size ); 
 	*support = GFP_READ /* | GFP_WRITE*/; 
 		
 	return TRUE; 
