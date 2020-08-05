@@ -241,7 +241,7 @@ BOOL API gfpLoadPictureGetInfo( void * ptr, INT * pictype, INT * width, INT * he
 		while(buf[38]!=0xA5 || buf[39]!=0x5A) {
 			unsigned char t;
 			if(fread(&t, sizeof(t), 1, data->fp) == 1) {
-				for(i=0; i<40; ++i) buf[i] = buf[i+1];
+				for(i=0; i<39; ++i) buf[i] = buf[i+1];
 				buf[39] = t;
 			} else break;
 		}
