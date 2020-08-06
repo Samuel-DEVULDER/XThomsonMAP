@@ -28,7 +28,7 @@ clean:
 update:
 	git pull
 
-git:
+git: all
 	git add .
 	git commit -m "$m"
 	git push -u origin master 
