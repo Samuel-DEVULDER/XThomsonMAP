@@ -14,9 +14,7 @@ GIT=git
 CFLAGS=-O2 -fomit-frame-pointer -Wall
 LFLAGS= -s -Wl,--kill-at -shared 
 
-all: $(PRJ).usr
-
-zip: $(PRJ).zip
+all: $(PRJ).zip
 
 clean:
 	-$(RM) *.usr *.zip
@@ -30,7 +28,7 @@ clean:
 update:
 	git pull
 
-git: all
+git:
 	git add .
 	git commit -m "$m"
 	git push -u origin master 

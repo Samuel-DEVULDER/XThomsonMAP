@@ -12,7 +12,7 @@ Using XnView you can now view thomson MAP file natively under windows. You can a
 
 # Installation
 
-Download [`XThomsonMAP.usr`](https://github.com/Samuel-DEVULDER/XThomsonMAP/raw/master/XThomsonMAP.usr) and copy it into XnView's `plugins/` folder. That's all!
+Extract the [ZIP archive](https://github.com/Samuel-DEVULDER/XThomsonMAP/raw/master/XThomsonMAP.zip) and copy `XThomsonMAP.usr` into XnView's `plugins/` folder. That's all!
 
 # Other XnView plugins
 
