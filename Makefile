@@ -4,6 +4,8 @@
 # (c) Samuel DEVULDER, 2020.
 #
 
+PRJ=XThomsonMAP
+
 RM=rm
 CC=gcc
 ZIP=zip
@@ -12,7 +14,9 @@ GIT=git
 CFLAGS=-O2 -fomit-frame-pointer -Wall
 LFLAGS= -s -Wl,--kill-at -shared 
 
-all: XThomsonMAP.zip
+all: $(PRJ).usr
+
+zip: $(PRJ).zip
 
 clean:
 	-$(RM) *.usr *.zip
@@ -26,7 +30,7 @@ clean:
 update:
 	git pull
 
-git:
+git: all
 	git add .
 	git commit -m "$m"
 	git push -u origin master 
